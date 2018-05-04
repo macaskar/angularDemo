@@ -15,6 +15,7 @@ export class CourseComponent implements OnInit {
   title = "List of courses";
   imageUrl = "http://cdn.attackofthecute.com/August-04-2011-04-01-45-iChat%20Image(2133844088).jpeg";
   courses;
+  isActive = true;
 
   constructor(service : CoursesService){
       this.courses = service.getCourses();
