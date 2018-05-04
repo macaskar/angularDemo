@@ -11,7 +11,7 @@ import { CoursesService } from './courses.service';
 @NgModule({
   declarations: [
     AppComponent, 
-    CoursesComponent, CourseComponent
+    CourseComponent
   ],
   imports: [
     BrowserModule
