@@ -4,10 +4,10 @@
             {{ course}}
         </li>
     </ul>
-
-    <button class = "btn btn-primary" [class.active]="isActive"> Save</button>
-    <button [style.backgroundColor]="isActive ? 'blue' : 'white'">Cancel</button>
-
+    <div (click)="onDivClicked()">
+        <button (click)="onSave($event)"> Save</button>
+        <button [style.backgroundColor]="isActive ? 'blue' : 'white'">Cancel</button>
+    </div>
 <br>
     <img src = "{{ imageUrl}}"/>
     <img [src]="imageUrl"/>
