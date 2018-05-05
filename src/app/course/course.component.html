@@ -13,7 +13,16 @@
    -->  
    
    <input [(ngModel)]="email" (keyup.enter)="onKeyUp()"/>
-    
+<br>
+   {{course.title | uppercase}} <br/>
+   {{course.students | number}} <br/>
+   {{course.rating | number:'1.2-2'}} <br/>
+   {{course.price | currency: 'USD': true:'.2-2'}} <br/>
+   {{course.releaseDate | date:'mediumDate'}} <br/>
+
+{{text | summary: 100}}
+
+<br>
 <br>
     <img src = "{{ imageUrl}}"/>
     <img [src]="imageUrl"/>
