@@ -9,7 +9,10 @@
         <button [style.backgroundColor]="isActive ? 'blue' : 'white'">Cancel</button>
     </div>
 
-    <input (keyup.enter)="onKeyUp()"/>
+  <!--   <input [value]="email" (keyup.enter)="email = $event.target.value; onKeyUp()"/>
+   -->  
+   
+   <input [(ngModel)]="email" (keyup.enter)="onKeyUp()"/>
     
 <br>
     <img src = "{{ imageUrl}}"/>

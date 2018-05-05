@@ -1,5 +1,5 @@
 import { CoursesService } from './../courses.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 
 /*  <courses>             =>  "courses"
    <div class="courses"   =>  ".courses"
@@ -16,6 +16,7 @@ export class CourseComponent implements OnInit {
   imageUrl = "http://cdn.attackofthecute.com/August-04-2011-04-01-45-iChat%20Image(2133844088).jpeg";
   courses;
   isActive = true;
+  email = "me@example.com";
 
   constructor(service : CoursesService){
       this.courses = service.getCourses();
@@ -32,7 +33,7 @@ export class CourseComponent implements OnInit {
   }
 
   onKeyUp(){
-      console.log("ENTER was pressed")
+      console.log(this.email);
   }
 
   ngOnInit() {
