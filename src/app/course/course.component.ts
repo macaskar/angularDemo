@@ -31,6 +31,10 @@ export class CourseComponent implements OnInit {
     console.log("is clicked ", $event);
   }
 
+  onKeyUp(){
+      console.log("ENTER was pressed")
+  }
+
   ngOnInit() {
   }
 

@@ -8,6 +8,9 @@
         <button (click)="onSave($event)"> Save</button>
         <button [style.backgroundColor]="isActive ? 'blue' : 'white'">Cancel</button>
     </div>
+
+    <input (keyup.enter)="onKeyUp()"/>
+    
 <br>
     <img src = "{{ imageUrl}}"/>
     <img [src]="imageUrl"/>
